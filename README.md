@@ -4,7 +4,7 @@
 
 - Scrapes the website https://www.houseofindya.com/ for list of necklace sets under jewelry and corresponding description, price and image urls.
 
-- Main code can be found [here](https://github.com/hanzala-sohrab/artyvis/blob/main/scraper/spiders/necklace_set_spider.py)
+- Main code can be found [here](./scraper/spiders/necklace_set_spider.py)
     ```python
     import scrapy
 
