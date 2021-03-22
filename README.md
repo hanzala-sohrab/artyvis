@@ -5,25 +5,25 @@
 - Scrapes the website https://www.houseofindya.com/ for list of necklace sets under jewelry and corresponding description, price and image urls.
 
 - Main code can be found [here](https://github.com/hanzala-sohrab/artyvis/blob/main/scraper/spiders/necklace_set_spider.py)
-```python
-import scrapy
+    ```python
+    import scrapy
 
 
-class NecklaceSetSpider(scrapy.Spider):
-    name = "necklace_set"
-    start_urls = [
-        'https://www.houseofindya.com/zyra/necklace-sets/cat'
-    ]
+    class NecklaceSetSpider(scrapy.Spider):
+        name = "necklace_set"
+        start_urls = [
+            'https://www.houseofindya.com/zyra/necklace-sets/cat'
+        ]
 
-    def parse(self, response):
-        for items in response.css("div.catgList ul"):
-            for item in items.css("li"):
-                yield {
-                    'description': item.css("div.catgName p::text").get(),
-                    'price': item.css("div.catgName span::text").get()[1:],
-                    'image': item.css('img::attr(data-original)').get()
-                }
-```
+        def parse(self, response):
+            for items in response.css("div.catgList ul"):
+                for item in items.css("li"):
+                    yield {
+                        'description': item.css("div.catgName p::text").get(),
+                        'price': item.css("div.catgName span::text").get()[1:],
+                        'image': item.css('img::attr(data-original)').get()
+                    }
+    ```
 
 ## Steps to run the scraper
 
