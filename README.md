@@ -28,21 +28,21 @@
 ## Steps to run the scraper
 
 1. Clone this repo
-```shell
-git clone https://github.com/hanzala-sohrab/artyvis.git
-```
+    ```shell
+    git clone https://github.com/hanzala-sohrab/artyvis.git
+    ```
 2. Change directory
-```shell
-cd artyvis
-```
+    ```shell
+    cd artyvis
+    ```
 3. Run the scraper and store the data in JSON format
-```shell
-scrapy crawl necklace_set -O necklace_set.json
-```
+    ```shell
+    scrapy crawl necklace_set -O necklace_set.json
+    ```
 4. Run the scraper and store the data in CSV format
-```shell
-scrapy crawl necklace_set -O necklace_set.csv
-```
+    ```shell
+    scrapy crawl necklace_set -O necklace_set.csv
+    ```
 
 **<details><summary><ins>JSON Result</ins></summary>**
 ```json
