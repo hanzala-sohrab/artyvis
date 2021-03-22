@@ -1,0 +1,4 @@
+.vscode/
+__pycache__/
+necklace_set.csv
+necklace_set.json
